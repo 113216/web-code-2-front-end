@@ -1,25 +1,55 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Route, BrowserRouter, Routes, Navigate } from "react-router-dom"
+import Home from "./Pages/Home"
+import Login from "./Pages/Login"
+import Reg from "./Pages/Reg"
+import Bookingcam from "./Pages/Bookingcam"
+import UserBookings from './Pages/UserBookings';
+import AddCam from './Pages/AddCam';
+import AdminHome from './Pages/AdminHome';
+import EditCam from './Pages/EditCam';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/reg" element={<Reg />} />
+        <Route path="/booking/:camid" element={<Bookingcam />} />
+        <Route path="/userbookings" element={<UserBookings />} />
+        <Route path="/addcam" element={<AddCam />} />
+        <Route path="/admin" element={<AdminHome />} />
+        <Route path="/editcam/:camid" element={<EditCam />} />
+
+      </Routes>
+
+
+
+
+    </BrowserRouter>
+
   );
 }
 
 export default App;
+
+
+export function ProtectedRoute(props) {
+
+  if (localStorage.getItem('user')) {
+    return <Route{...props} />
+  }
+
+  else {
+    return <Navigate to="/login" />
+  }
+
+}

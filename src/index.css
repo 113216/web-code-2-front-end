@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@1,500&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,200 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bs-1{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.homepage{
+    text-align: center;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: bold;
+  color: orangered;
+}
+
+.hrader{
+ 
+padding: 5px;
+}
+
+.content{
+  background-color: rgb(255, 255, 255);
+  min-height: 90vh;
+
+}
+
+.hrader h1{
+  text-align: left;
+}
+
+
+.hrader .ant-btn{
+  margin-bottom: 20px;
+  box-shadow: none !important ;
+  background-color: white !important;
+  color: rgb(242, 145, 66);
+  border: 1px solid orangered;
+
+}
+
+.carimg{
+  padding: 5px;
+  height: 150px;
+  width: auto;
+  border-radius: 5px;
+  transform: translateY(-60px);
+}
+
+.Entire{
+  margin-top: 40px;
+}
+.cam{
+  margin-top: 100px;
+  height: 170px;
+  transition: 0.3s;
+  margin-bottom: 70px;
+}
+
+.cam:hover{
+  height: 220px;
+}
+
+.cam:hover > .cam-content{
+  opacity: 1;
+  transform: translateY(-85px);
+}
+
+.button1{
+  margin-bottom: 20px;
+  box-shadow: none !important ;
+  background-color: white !important;
+  color: rgb(242, 145, 66);
+  border: 1px solid orangered;
+
+  
+}
+
+.spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
+.text{
+  text-align: left;
+  justify-content: center;
+  padding: 30px;
+}
+
+.login{
+  min-height: 100vh;
+  background-color: black;
+  
+}
+
+.login label, .login h1{
+  color: white !important;
+  opacity: 0.6;
+ 
+}
+
+.login-form{
+  padding: 50px;
+  background-color: #1f1f1f;
+  margin-top: 40px;
+  margin-right: 50px;
+ 
+  
+}
+
+h1 .logo{
+   margin-bottom: 100px;
+}
+
+.login input{
+  color: #333333 !important;
+  border: none !important;
+}
+
+.cam-content{
+  transform: translateY(-200px);
+  opacity: 0;
+}
+.login-wallpaper{
+  height: 500px;
+  width: auto;
+  
+}
+
+.button1{
+  margin-bottom: 30px;
+  padding: 5px 10px;
+  outline: none !important;
+}
+
+.button1 :focus{
+  border: none;
+}
+
+.login a{
+  color: white !important;
+  opacity: 0.5;
+}
+
+button{
+  padding: 5px 10px;
+}
+
+.camimg2 {
+  height: 400px;
+  width: auto;
+  border-radius: 10px;
+ 
+}
+
+.booking{
+  justify-content: center;
+  min-height: 19vh;
+  
+}
+
+Col{
+  padding-top: 100px;
+}
+
+.date-and-time{
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.ant-divider-horizontal.ant-divider-with-text-center::before,
+.ant-divider-horizontal.ant-divider-with-text-center::after
+{
+   border-top: 1px solid rgb(0, 0, 0);
+}
+
+svg{
+  height: 25px !important;
+  width: 25px !important;
+}
+a{
+  color: orangered;
+}
+
